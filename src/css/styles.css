@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    height: 100%;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    background: white;
+}
+
+.container {
+    /* border: 1px solid black;*/
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 0px;
+    text-align: center;
+    background: white;
+}
+
+.btnHolder {
+    text-align: right;
+    padding: 5px 15px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 5px;
+}
+
+.white {
+    color: #fff;
+} 
+
+.black {
+  color: #000;
+} 
+
+.member-info {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+    top: 43%;
+    left: 10%;
+    text-align: left;
+    position: absolute;
+}
+
+.member-info h2 {
+    font-size:x-large;
+    margin: 0px;
+}
+
+.member-info h3 {
+    font-size:large;
+    margin: 0px;
+}
+
+.qrcode-container {
+  top: 33%;
+  left: 73%;
+  position: absolute;
+  max-width: 70px;
+}
+
+.member-info {
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 2px;
+}
+
+.member-info-iwc {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+    top: 40%;
+    left: 15%;
+    text-align: left;
+    position: absolute;
+}
+
+.member-info-iwc h2 {
+    font-size:large;
+    font-weight:600;
+    margin: 0px;
+}
+
+.member-info-iwc h3 {
+    font-size:large;
+    font-weight: lighter;
+    margin: 0px;
+}
+
+.qrcode-container-iwc {
+    top: 62%;
+    left: 15%;
+    position: absolute;
+    max-width: 60px;
+}
+
+.card-notes {
+  padding-top: 350px;
+  max-width: 400px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 420px) {
+  .card-notes {
+    padding-top: 300px;
+  }
+  .member-info, .member-info-iwc  h2 {
+    font-size:large;
+  }
+  .member-info, .member-info-iwc h3 {
+    font-size:medium;
+  }
+  .member-info-iwc {
+    top: 32%;
+  }
+  .qrcode-container {
+    max-width: 60px;
+  }
+  .qrcode-container-iwc {
+    top: 58%;
+    max-width: 60px;
+  }
+  #deployment {
+    width: 230px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+.member-info p {
+    font-size: small;
+}
+
+.vcard {
+    display: none;
+}
+
+.card-info {
+    top: 12%;
+    width:100%;
+    position: absolute;
+    font-weight: bold;
+}
+
+#card-serialNo {
+    padding-right: 50px;
+    
+}
+
+#card-contolNo {
+    padding-left: 40px;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    perspective: 1000px;
+    -webkit-perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  -webkit-transition: transform 0.6s;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flipped {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: white;
+}
+
+.flip-card-front img {
+  width:100%;
+}
+
+.flip-card-back {
+  background-color:white;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+
+.flip-card-back img {
+  width:100%;
+}
+
+.invalid-card  {
+  padding: 50px;
+  border: 1px solid red;
+  border-radius: 10px;
+}
+
+.generate {
+    margin-top: 30px;
+}
+
+.generate form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.generate form button {
+    margin-left: 5px;
+}
+
+.custom-heading {
+    color: #7a395c;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+.loader {
+    margin: 10px;
+    border-radius: 10px;
+    background: gainsboro;
+    padding: 50px;
+    display: none;
+}
+
+.error {
+    padding: 10px;
+    color: #E35B42;
+    border: 1px solid #E35B42;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+
